@@ -11,7 +11,7 @@
   <body>
     <div class="flex-container">
       <div class="image">
-        <img width="100%" src="/image/ocean-10.jpeg" alt="" />
+        <img height="100%" width="100%" src="/image/ocean-10.jpeg" alt="" />
       </div>
       <div class="content">
         <div class="top">
@@ -25,15 +25,42 @@
             You <i>know</i> you want to.
           </p>
         </div>
-        <div class="form">
-          <form action="post">
-            <label for="text"><h2>Lets do this!</h2></label>
-            <label for="first-name">FIRST NAME</label>
-            <input id="first-name" type="text" value="Thor" />
+        <div class="form-div">
+          <p class="text">Lets do this!</p>
+          <form class="form" action="post">
+            <label for="firs-name">FIRST NAME</label>
             <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" value="Odinsonl" />
+
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="john"
+            />
+
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="cena"
+            />
+
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
+            <label for="phone-number">PHONE NUMBER</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="mandipgurung65@yahoo.com"
+            />
+            <input type="number" name="phone-number" id="phone-number" />
+            <label for="password">PASSWORD</label>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="confirm-passord"
+              id="confirm-password"
+            />
           </form>
         </div>
         <div class="bot"></div>

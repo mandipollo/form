@@ -1,14 +1,18 @@
+body {
+  margin: 0;
+}
+
 .flex-container {
   display: flex;
+  height: 100vh;
 }
 
 .image {
-  object-fit: contain;
-  flex: 1;
+  flex: 2;
 }
 
 .content {
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
 }
@@ -25,9 +29,23 @@
   font-size: 20px;
   font-weight: bold;
 }
-.form {
+.form-div {
   flex: 1;
-  margin: 0 10%;
+  margin: 5% 10%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.form input {
+  width: 80%;
+  height: 20px;
 }
 
 .bot {
