@@ -4,66 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/main.js"></script>
   </head>
   <body>
     <div class="flex-container">
-      <div class="image">
-        <img height="100%" width="100%" src="/image/ocean-10.jpeg" alt="" />
+      <div class="blank"></div>
+      <div class="image-container">
+        <p class="linkUnsplash">
+          Photo made by
+          <a href="https://unsplash.com/photos/25xggax4bSA">Halie West </a> on
+          <a href="https://unsplash.com/">unsplash</a>
+        </p>
       </div>
       <div class="content">
-        <div class="top">
-          <p class="text">
-            This is not a real online service! You know you need something
-            <br />
-            like this in your life to help realize your deepest dreams. <br />
-            sign up <i>now</i> to get started.
-            <br />
-            <br />
-            You <i>know</i> you want to.
-          </p>
+        <div class="text-form">
+            <p><h2>This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams. <br>sign up <i>now</i> to get started.
+            <br><br>You <i>know</i> you want to.</h2></p>
         </div>
-        <div class="form-div">
-          <p class="text">Lets do this!</p>
-          <form class="form" action="post">
-            <label for="firs-name">FIRST NAME</label>
-            <label for="last-name">LAST NAME</label>
-
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="john"
-            />
-
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="cena"
-            />
-
-            <label for="email">EMAIL</label>
-            <label for="phone-number">PHONE NUMBER</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="mandipgurung65@yahoo.com"
-            />
-            <input type="number" name="phone-number" id="phone-number" />
-            <label for="password">PASSWORD</label>
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="password" id="password" />
-            <input
-              type="password"
-              name="confirm-passord"
-              id="confirm-password"
-            />
-          </form>
+        <div class="form">
+            
+            <form action="">
+                <p><h1>Lets do this!</h1></p>
+                <div class="form-flex">
+                     <div class="inputs-flex">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" >
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" >
+                </div>
+                <div class="inputs-flex">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="number" id="phone-number">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password">
+                </div>
+                   
+                </div>
+                 <button type="submit">Create Account</button>
+                 <p>Already have an account? </p>
+                
+              
+                
+               
+            </form>
+            
         </div>
-        <div class="bot"></div>
+        <div class="bottom">
+          
+        </div>
       </div>
     </div>
   </body>
